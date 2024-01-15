@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Domenico Pio Ferrara">
+    <link rel="icon" href="immagini/icona.jpg" >
+    <title>Bộ Sưu Tập Vincent Vangogh</title>
+    <link rel="stylesheet" href="stile.css">
+    <script src="https://kit.fontawesome.com/667e5f8c98.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Bree+Serif|Indie+Flower|Montserrat|Roboto+Mono|Rubik&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="javascript.js"></script>
+  </head>
+  <body>
+    <div id="windows">
+      <a href="index.html"><i class="fas fa-home"></i></a>
+      <div class="galleria">
+        <div class="angolo" id="angolo1">
+          <div class="muro" id="muro1">
+              <div class="picture">
+                <img id="immgine"src="immagini/g5.jpg" alt="Campo di grano con cipressi " onclick="zoom(this);" >
+                <p >Đồng Lúa Mì Và Cây Bách
+                  <button type="button" name="button" onclick="up(1);"><i class="fas fa-info-circle"></i></button>
+                </p>
+              </div>
+          </div>
+          <div class="murol" id="muro2">
+            <div class="picture">
+              <img id="immgine" src="immagini/g6.jpg" alt="Campo di grano con volo di corvi" onclick="zoom(this);">
+              <p>Cánh Đồng Lúa Mì Quạ Bay
+                <button type="button" name="button" onclick="up(2);"><i class="fas fa-info-circle"></i></button>
+              </p>
+            </div>
+          </div>
+          <div class="floor" id="floor1"></div>
+        </div>
+        <div class="angolo" id="angolo2">
+          <div class="muro" id="muro3">
+            <div class="picture">
+              <img id="immgine" src="immagini/g22.jpg" alt="Notte stellata" onclick="zoom(this);">
+              <p>Đêm Đầy Sao
+                <button type="button" name="button" onclick="up(3);"><i class="fas fa-info-circle"></i></button>
+              </p>
+            </div>
+          </div>
+          <div class="floor" id="floor2"></div>
+        </div>
+        <div class="angolo" id="angolo3">
+          <div class="muro" id="muro4">
+            <div class="picture">
+              <img id="immgine"src="immagini/g23.jpg" alt="Notte stellata sul Rodano" onclick="zoom(this);">
+              <p>Đêm Đầy Sao Trên Sông Rhone
+                <button type="button" name="button" onclick="up(4);"><i class="fas fa-info-circle"></i></button>
+              </p>
+            </div>
+          </div>
+          <div class="murol" id="muro5">
+            <div class="picture">
+              <img id="immgine"src="immagini/g24.jpg" alt="Raccolta alla pianura della Crau" onclick="zoom(this);">
+              <p>Thu Hoạch Ở Đồng Bằng Crau
+                <button type="button" name="button" onclick="up(5);"><i class="fas fa-info-circle"></i></button>
+              </p>
+            </div>
+          </div>
+          <div class="floor" id="floor3"></div>
+        </div>
+        <div class="angolo" id="angolo4">
+          <div class="muro" id="muro6">
+            <div class="picture">
+              <img id="immgine" src="immagini/g34.jpg" alt="Sunset wheat fields near Arles" onclick="zoom(this);">
+              <p>Cánh Đồng Lúa Mì Lúc Hoàng Hôn Gần Arles
+                <button type="button" name="button" onclick="up(6);"><i class="fas fa-info-circle"></i></button>
+              </p>
+            </div>
+          </div>
+          <div class="murol" id="muro7">
+            <div class="picture">
+              <img id="immgine"src="immagini/g35.jpg" alt="Terrazza del caffè la sera" onclick="zoom(this);">
+              <p>Cà Phê Vỉa Hè Trong Đêm
+                <button type="button" name="button" onclick="up(7);"><i class="fas fa-info-circle"></i></button>
+              </p>
+            </div>
+          </div>
+          <div class="floor" id="floor4"></div>
+        </div>
+        <div class="angolo" id="angolo5">
+          <div class="muro" id="muro8">
+            <div class="picture">
+              <img id="immgine"src="immagini/g41.jpg" alt="Veduta di Arles con Iris" onclick="zoom(this);">
+              <p>Quang Cảnh Arles Với Iris
+                <button type="button" name="button" onclick="up(8);"><i class="fas fa-info-circle"></i></button>
+              </p>
+            </div>
+          </div>
+          <div class="floor" id="floor5"></div>
+        </div>
+        <div class="angolo" id="angolo6">
+          <div class="muro" id="muro9">
+            <div class="picture">
+              <img id="immgine"src="immagini/g43.jpg" alt="Wheat field with a lark" onclick="zoom(this);">
+              <p>Cánh Đồng Lúa Mì Với Chim Sơn Ca
+                <button type="button" name="button" onclick="up(9);"><i class="fas fa-info-circle"></i></button>
+              </p>
+            </div>
+          </div>
+          <div class="murol" id="muro10">
+            <div class="picture">
+              <img id="immgine"src="immagini/g45.jpg" alt="Wheatfield under thunderclouds" onclick="zoom(this);">
+              <p>Cánh Đồng Lúa Mì Dưới Đám Mây Giông
+                <button type="button" name="button" onclick="up(10);"><i class="fas fa-info-circle"></i></button>
+              </p>
+            </div>
+          </div>
+          <div class="floor" id="floor6"></div>
+        </div>
+      </div>
+      <div class="pulsanti" >
+        <button type="button" onclick="girasx();"><i class="fas fa-arrow-circle-left"></i></button>
+        <button type="button" onclick="giradx();"><i class="fas fa-arrow-circle-right"></i></button>
+        <span id="sdf"></span>
+      </div>
+      <div class="didascalie" id="didascalia1">
+        <div class="descrizione" id="descrizione1">
+          <button onclick="down(1);"><i class="fas fa-times-circle"></i></button>
+          <h2>Đồng Lúa Mì Và Cây Bách</h2>
+          <p>
+            [72×91, National Gallery, Londra]<br><br>
+            Tác phẩm này mô tả cảnh quan nông thôn trong một ngày
+            gió mạnh. Ở phía trước, chúng ta tìm thấy một cánh đồng lúa mì với nhiều bắp lúa mì
+            các sắc thái khác nhau của màu be. Ở phía sau, bạn có thể thấy một số bụi cây và
+            các loại cây khác, tiếp theo là những cây bách màu sẫm. Và
+            cuối cùng, ở hậu cảnh, chúng ta thấy những ngọn núi xanh nhạt/xanh nhạt và bầu trời
+            đầy những đám mây trắng cong.
+            </p>
+        </div>
+        <div class="descrizione" id="descrizione2">
+          <button onclick="down(2);"><i class="fas fa-times-circle"></i></button>
+          <h2>Cánh Đồng Lúa Mì Quạ Bay</h2>
+          <p>
+            [ 50,3×100,5 cm, Van Gogh Museum, Amsterdam]<br><br>
+            Rất có thể đây là bức tranh canvas cuối cùng được vẽ
+            của Van Gogh. Sau vài ngày, trên một cánh đồng lúa mì giống như trong hình
+            trên bức tranh, anh ta đã tự bắn vào tim mình. Trong canvas này có
+            nó không chỉ chứa đựng sự tồn tại bi thảm của người họa sĩ mà còn chứa đựng tất cả sự sống động của nó.
+            kỹ thuật điều hành. Bức tranh được thực hiện với một vài màu cơ bản. Trên một
+            chuẩn bị màu đỏ, dấu vết màu vàng để biểu thị hạt, các dấu hiệu khác
+            màu xanh lá cây và màu đỏ để chỉ đường đi qua cánh đồng. Bầu trời là một
+            màu xanh coban đậm và không tự nhiên. Một bầu trời nặng nề và ngột ngạt. Ít cửa sập
+            người da đen mô tả một chuyến bay của quạ.
+          </p>
+        </div>
+        <div class="descrizione" id="descrizione3">
+          <button onclick="down(3);"><i class="fas fa-times-circle"></i></button>
+          <h2>Đêm Đầy Sao</h2>
+          <p>
+            [74 cm x 92 cm, Museum of Modern Art, New York]<br><br>
+            Bức tranh được tạo ra trong thời gian anh ấy lưu trú
+           ở bệnh viện Saint-Rémy. Tuy nhiên, bức tranh anh tạo ra không phải là một bức tranh trung thực
+           tái tạo lại phong cảnh mà anh ta nhìn thấy, mà là một tầm nhìn tưởng tượng trong đó
+           các yếu tố cũng hiện lên, chẳng hạn như ngôi làng yên tĩnh, được lấy từ ký ức của anh
+           Tiếng Hà Lan. Cây bách đóng vai trò như một cây cầu tưởng tượng giữa trái đất và bầu trời.
+          </p>
+        </div>
+        <div class="descrizione" id="descrizione4">
+          <button onclick="down(4);"><i class="fas fa-times-circle"></i></button>
+          <h2>Đêm Đầy Sao Trên Sông Rhone</h2>
+          <p>
+            [72 cm x 92 cm, Museo d'Orsay, Parigi]<br><br>
+            Trong đêm đầy sao trên sông Rhone (sơn dầu trên vải) hiện nay
+           được bảo quản tại Musée d'Orsay ở Paris, nghệ sĩ đã tái hiện lại một cách chi tiết
+           những gì anh ta nhìn thấy trong bóng tối. Ánh đèn thành phố và những ngôi sao được phản ánh trong
+           Rhone. Độ sáng của chúng được thể hiện bằng màu cam sáng, trong khi
+           màu xanh da trời được kết hợp với màu xanh Phổ và coban. Các ngôi sao
+           ánh sáng lộng lẫy tỏa sáng trên bầu trời và xung quanh có ánh sáng lung linh tỏa sáng
+           trong màu xanh của đêm. Bức tranh thể hiện sự đau khổ của người họa sĩ và
+           sự biến đổi mà tâm hồn anh ta đang trải qua.
+          </p>
+        </div>
+        <div class="descrizione" id="descrizione5">
+          <button onclick="down(5);"><i class="fas fa-times-circle"></i></button>
+          <h2>Thu Hoạch Ở Đồng Bằng Crau</h2>
+          <p>[72,5 x 92 cm, Amsterdam, Rijks museum Vincent Van Gogh]<br><br>
+            Đồng bằng Crau là một bức tranh sơn dầu được vẽ vào tháng Sáu
+           1888 gần Arles ở Provence, miền nam nước Pháp vào thời điểm đó
+           mùa gặt. Người nghệ sĩ không chỉ muốn khắc họa khung cảnh thanh bình này và
+           đầy nắng mà còn là công việc của người nông dân với các khâu thu hoạch. TRONG
+           ở một số khu vực của bức tranh, có thể nhìn thấy những nhân vật nhỏ ở đây và ở đó có ý định
+           công việc của họ. Màu sắc tươi sáng và sống động, nổi bật trong số đó
+           rõ ràng là có nhiều sắc thái khác nhau của màu vàng của lúa mì.
+          </p>
+        </div>
+        <div class="descrizione" id="descrizione6">
+          <button onclick="down(6);"><i class="fas fa-times-circle"></i></button>
+          <h2>Cánh Đồng Lúa Mì Lúc Hoàng Hôn Gần Arles</h2>
+          <p>[73.5 x 92.0 cm, Kunst museum Winterthur, svizzera]<br><br>
+            Tác phẩm “Cánh đồng lúa mì hoàng hôn gần Arles” là tranh của Vân
+           Gogh sáng tạo bằng kỹ thuật sơn dầu trên canvas vào cuối tháng 6 năm 1888 (giai đoạn
+           tiếng Arlesian). Phối cảnh trong bố cục hiện tại có một tầm nhìn rất dài
+           cao đến mức những biến đổi màu sắc mạnh mẽ của cái bao la chiếm ưu thế
+           cánh đồng lúa mì trên dải nhỏ của bầu trời xanh, gần như
+           bổ sung không hoàn toàn có khả năng đóng vai trò đối trọng, trái lại
+           sự kết hợp dễ chịu.
+          </p>
+        </div>
+        <div class="descrizione" id="descrizione7">
+          <button onclick="down(7);"><i class="fas fa-times-circle"></i></button>
+          <h2>Cà Phê Vỉa Hè Trong Đêm</h2>
+          <p>[81 cm x 65 cm, Museo Kröller-Müller]<br><br>
+            Bức tranh được thực hiện bằng kỹ thuật sơn dầu trên canvas. Chủ thể đại diện
+           một cái nhìn thoáng qua về thành phố Arles nơi họa sĩ đã sống một thời gian
+           thời gian. Đây là một trong những bức tranh đẹp và nổi tiếng nhất của Van Gogh và bạn có thể
+           hiểu tại sao chỉ bằng cách nhìn vào nó. Vẻ đẹp của “quán cà phê sân thượng”
+           vào buổi tối" bao gồm sự tương phản giữa màu sắc ấm áp tạo nên cà phê và màu sắc lạnh lẽo trong đó.
+           mặt tiền của các tòa nhà và mọi thứ được tìm thấy ở xa trong phần còn lại của khung cảnh.
+          </p>
+        </div>
+        <div class="descrizione" id="descrizione8">
+          <button onclick="down(8);"><i class="fas fa-times-circle"></i></button>
+          <h2>Quang Cảnh Arles Với Iris</h2>
+          <p>[54 x 65 cm, 	Van Gogh Museum, Amsterdam]<br><br>
+            Đây là một bức tranh Van Gogh được thực hiện bằng kỹ thuật
+           sơn dầu trên vải vào tháng 5 năm 1888 (thời kỳ Arles). Ở tiền cảnh, hoa diên vĩ màu tím nổi bật, trong đó các biến thể màu vàng của hoa mao lương đóng vai trò như một điểm đối lập, với các vị trí kề nhau.
+           tông màu bổ sung nhấn mạnh độ sáng của toàn bộ bối cảnh. Các
+           Van Gogh đạt được hiệu ứng tương tự bằng cách bao quanh nó bằng thảm thực vật xanh
+           những ngôi nhà nhỏ ở thị trấn nằm bên trái. Bầu trời với độ sáng mạnh, đến từ bên trái, được tạo ra với các biến thể màu sắc bắt nguồn từ xanh lam, tím và xanh lục
+           thác nước. Những cái cây nằm giữa hoa diên vĩ và thị trấn dường như tạo thành một
+           bộ lọc thực vật trên những cánh đồng có đầy đủ các yếu tố hoa.
+          </p>
+        </div>
+        <div class="descrizione" id="descrizione9">
+          <button onclick="down(9);"><i class="fas fa-times-circle"></i></button>
+          <h2>Cánh Đồng Lúa Mì Với Chim Sơn Ca</h2>
+          <p>[54 cm × 65.5 cm, 	Van Gogh Museum, Amsterdam]<br><br>
+            Năm 1887, khi Vincent Van Gogh đang cư trú tại Paris,
+           ông đã tạo ra một bức tranh sơn dầu thường được gọi là Cánh đồng lúa mì với chim sơn ca. Phần
+           trung tâm cho thấy một cánh đồng lúa mì dưới bầu trời
+           được tạo hình bởi những đám mây nhẹ. Một con chim sơn ca bay về phía góc trên cùng của
+           bên trái của canvas.
+          </p>
+        </div>
+        <div class="descrizione" id="descrizione10">
+          <button onclick="down(10);"><i class="fas fa-times-circle"></i></button>
+          <h2>Cánh Đồng Lúa Mì Dưới Đám Mây Giông</h2>
+          <p>[50.4 cm x 101.3 cm, Van Gogh Museum, Amsterdam]<br><br>
+            Van Gogh đã sử dụng sự kết hợp màu sắc mạnh mẽ trong bức tranh này: bầu trời xanh tương phản với lúa mì màu vàng cam, trong khi màu đỏ của con đường được tăng cường bởi những sọc xanh của cỏ.</p>
+        </div>
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+      <button class="close" onclick="chiudi();"><i class="fas fa-times"></i></button>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+  </body>
+</html>
